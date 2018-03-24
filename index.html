@@ -1,46 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Linked List</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <main>
-    <section class="left">
-      <header>Linked<span></span> List</header>
-        <input type="text" name="Title" placeholder="Website Title">
+    <section class="container-left">
+      <header><h1>Linked<span><img src="linked-list-logo.svg"></span> List</h1></header>
+        <input type="text" name="Title" placeholder="Website Title" class="main-input">
         <label for="Title"></label>
-       <input type="text" name="Website URL" placeholder="Website URL">
+        <input type="text" name="Website URL" placeholder="Website URL" class="main-input">
         <label for="website URL"></label>
-        <button id="enter" class="enter">Enter</button>
+        <button id="enter" class="enter-buttons">Enter</button>
         <label for="enter"></label>
     </section>
-    <section class="right"></section>
+    <section class="container-right">
       <article>
-        <h2></h2>
-        <h3></h3>
+        <h2 id="output-title-one"></h2>
+        <h3 id="output-url-one"></h3>
         <button>Read</button>
         <button>Delete</button>
       </article>
       <article>
-        <h2></h2>
-        <h3></h3>
+        <h2 id="output-title-two"></h2>
+        <h3 id="output-url-two"></h3>
         <button>Read</button>
         <button>Delete</button>
       </article>
       <article>
-        <h2></h2>
-        <h3></h3>
+        <h2 id="output-title-three"></h2>
+        <h3 id="output-url-three"></h3>
         <button>Read</button>
         <button>Delete</button>    
       </article>
       <article>
-        <h2></h2>
-        <h3></h3>
+        <h2 id="output-title-four"></h2>
+        <h3 id="output-url-four"></h3>
         <button>Read</button>
         <button>Delete</button>     
       </article>
     </section>
   </main>
-
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
