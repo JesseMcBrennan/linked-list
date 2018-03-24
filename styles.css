@@ -56,10 +56,8 @@ h1  {
 
 h2 { 
   font-weight: 800; color: #455A64;
-}
-
-h3 { 
-  color: #607D8B;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 img { 
@@ -70,11 +68,10 @@ img {
 a { 
   color: #607D8B;
   text-decoration: underline #f2f4f4;
+  line-height: 280%;
 }
 
-
-
-br { 
+hr { 
   color: #CFD8DC;
 }
 
@@ -89,6 +86,21 @@ br {
 
 .main-input::placeholder-shown: { 
   font-size: 
+}
+
+.read-button { 
+  float: left;
+  background: transparent;
+  border: none; 
+  padding-top: 5%;
+
+}
+
+.delete-button { 
+  float: right;
+  background: transparent;
+  border: none; 
+  padding-top: 5%;
 }
 
  #enter {  
@@ -110,9 +122,9 @@ br {
   border: 2px solid #808184;
   margin: auto;
   text-align: left;
-  padding: 1%;
+  padding: 2%;
   background-color: #FFFFFF;
-  margin: 4%;
+  margin: 2%;
   height: 150px;
 
 }
