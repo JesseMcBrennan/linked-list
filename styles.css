@@ -1,6 +1,15 @@
+*,
+*: after,
+*: before { 
+box-sizing: border-box;
+}
+
+
+
 * { 
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 400; 
+  margin: 0;
 }
 
 html  { 
@@ -13,24 +22,20 @@ body  {
 }
 
 main { 
-  border: 7px solid #808184;
+  display: flex;
   width: 100%;
 }
 
 
 section { 
   display: inline-block;
-  width: 49.5%;
+  width: 50%;
 }
 
 .container-left { 
-  border: 1px solid #808184;
   text-align: center;
-  margin: auto;
-  margin-bottom: 0;
-  background-color: #455A64;
-  padding-top: 280px;
-  padding-bottom: 300px;
+  background-color: #455A64; 
+  height: 100vh;
 }
 
 header { 
@@ -42,8 +47,19 @@ h1  {
   color: #ffffff; 
   color: white;
   font-weight: 800;
-  padding-bottom: 56px;
-  font-size: 4.5rem;
+  margin-top:
+  padding-bottom: 30%;
+  margin-bottom: 7%;
+  font-size: 568%;
+  margin-top: 10%;
+}
+
+h2 { 
+  font-weight: 800; color: #455A64;
+}
+
+h3 { 
+  color: #607D8B;
 }
 
 img { 
@@ -51,26 +67,53 @@ img {
   margin-left: 15px;
 }
 
+a { 
+  color: #607D8B;
+  text-decoration: underline #f2f4f4;
+}
+
+
+
+br { 
+  color: #CFD8DC;
+}
+
  .main-input { 
   display: block;
   margin: auto;
   text-align: left;
   margin-bottom: 72px;
+  width: 85%;
+  height: 50px;
+}
+
+.main-input::placeholder-shown: { 
+  font-size: 
 }
 
  #enter {  
   margin: auto;
-  width: 49.5%;
+  width: 85%;
+  height: 50px;
   text-align: center;
   background-color: #FFC107;
+  margin-bottom: 10%;
  }
 
 .container-right { 
-  border: 1px solid #808184;
   background-color: #CFD8DC;
+  text-align: center;
+  height: 100vh;
 }
 
-article { 
+.cards { 
+  border: 2px solid #808184;
+  margin: auto;
+  text-align: left;
+  padding: 1%;
+  background-color: #FFFFFF;
+  margin: 4%;
+  height: 150px;
 
 }
 
