@@ -24,28 +24,32 @@ $('#enter').on('click', function() {
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
+ $(".container-right").append("");
 });
 
 $('#read-button').on('click', function() {
-  $('#read-button').toggleClass('#colorred');
+$(this).toggleClass('colorred');
 });
 
 
-      `<article class="cards">
-        <h2 id="output-title-two">The Website Title</h2>
+
+
+
+ var card = $(`<article class="cards">
+        <h2 id="output-title-two">${$outputTitle}</h2>
         <hr>
-        <a href="${$websiteUrl.val()}">www.thewebsiteurl.com</a>
+        <a href="${$outputURL}">${$outputURL}</a>
         <hr>
         <button class="bookmarks-button" class="colorred" id="read-button">Read</button>
         <button class="bookmarks-button" id="delete-button">Delete</button>
-      </article>`
+      </article>`)*/
 
 
-// $('bookmarkTitle').on('keypress', function() {
 
-// })
 
-// websiteUrl.addEventListener('input', function() {
+
+
+// // websiteUrl.addEventListener('input', function() {
 
 // });
 

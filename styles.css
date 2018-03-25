@@ -110,6 +110,10 @@ hr {
   float: left;
 }
 
+input:focus {
+  outline: none;
+}
+
 #delete-button { 
   float: right;
 }
