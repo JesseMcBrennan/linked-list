@@ -71,6 +71,12 @@ a {
   line-height: 280%;
 }
 
+a:hover {
+  font-weight: 800;
+  text-decoration: underline #ffc107;
+
+}
+
 hr { 
   color: #CFD8DC;
 }
@@ -88,28 +94,39 @@ hr {
   font-size: 
 }
 
-.read-button { 
-  float: left;
+.bookmarks-button {
+  color: #455a64;
   background: transparent;
   border: none; 
   padding-top: 5%;
-
 }
 
-.delete-button { 
+.bookmarks-button:hover {
+  font-weight: 800;
+  text-decoration: underline #ffc107;
+}
+
+#read-button { 
+  float: left;
+}
+
+#delete-button { 
   float: right;
-  background: transparent;
-  border: none; 
-  padding-top: 5%;
 }
 
  #enter {  
   margin: auto;
   width: 85%;
   height: 50px;
+  font-weight: 800;
   text-align: center;
   background-color: #FFC107;
   margin-bottom: 10%;
+  border: none;
+ }
+
+ #enter:hover {
+  color: #ffd773;
  }
 
 .container-right { 
@@ -119,7 +136,7 @@ hr {
 }
 
 .cards { 
-  border: 2px solid #808184;
+  border: 2px solid #607d8b;
   margin: auto;
   text-align: left;
   padding: 2%;
