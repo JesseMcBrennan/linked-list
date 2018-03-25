@@ -26,6 +26,7 @@ $('#enter').on('click', function() {
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
+ $('#title-input').val() = "";
 });
 
 $('section').on('click', '.cards .bookmarks-button', function() {

@@ -91,7 +91,7 @@ hr {
 }
 
 .main-input::placeholder: { 
-  display: 
+  size: 2em;
 }
 
 .bookmarks-button {
