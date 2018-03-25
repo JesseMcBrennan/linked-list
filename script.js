@@ -1,21 +1,61 @@
-//
-var bookmarkTitle = document.queryselector('#title-input');
-var websiteUrl = document.queryselector('#url-input');
-var submitButton = document.queryselector('#enter');
+// Variables
 
-var outputWebTitle = document.queryselector('.output-title');
-var outputWebUrl = document.queryselector('.output-url');
-var readButton = document.queryselector('.read-button');
-var deleteButton = document.queryselector('.delete-button');
+//Input Variables
 
-bookmarkTitle.addEventListener('input', function() {
+var $bookmarkTitle = $('#title-input');
+var $websiteUrl = $('#url-input');
 
+//Button Variables
+
+var $submitButton = $('#enter');
+var $readButton = $('#read-button');
+var $deleteButton = $('.delete-button');
+
+//Display Variables
+
+var $outputWebTitle = $('.output-title');
+var $outputWebUrl = $('.output-url');
+
+
+//Event Listeners
+
+$('#enter').on('click', function() {
+ var outputTitle = $('#title-input').val();
+ $('.output-title').text(outputTitle);
+ var outputURL = $('#url-input').val();
+ $('.output-url').text(outputURL);
 });
 
-websiteUrl.addEventListener('input', function() {
-
+$('#read-button').on('click', function() {
+  $('#read-button').toggleClass('#colorred');
 });
 
-submitButton.addEventListener('input', function() {
 
-});
+      `<article class="cards">
+        <h2 id="output-title-two">The Website Title</h2>
+        <hr>
+        <a href="${$websiteUrl.val()}">www.thewebsiteurl.com</a>
+        <hr>
+        <button class="bookmarks-button" class="colorred" id="read-button">Read</button>
+        <button class="bookmarks-button" id="delete-button">Delete</button>
+      </article>`
+
+
+// $('bookmarkTitle').on('keypress', function() {
+
+// })
+
+// websiteUrl.addEventListener('input', function() {
+
+// });
+
+// submitButton.addEventListener('click', function() {
+//    bookmarkTitle.value = outputWebTitle.innerText
+// });
+
+//Functions
+
+
+
+
+//Notes

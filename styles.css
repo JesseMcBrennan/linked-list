@@ -98,7 +98,7 @@ hr {
   color: #455a64;
   background: transparent;
   border: none; 
-  padding-top: 5%;
+  padding-top: 2.5%;
 }
 
 .bookmarks-button:hover {
@@ -112,6 +112,10 @@ hr {
 
 #delete-button { 
   float: right;
+}
+
+.colorred { 
+  color: red;
 }
 
  #enter {  
@@ -141,7 +145,7 @@ hr {
   text-align: left;
   padding: 2%;
   background-color: #FFFFFF;
-  margin: 2%;
+  margin: 3%;
   height: 150px;
 
 }
