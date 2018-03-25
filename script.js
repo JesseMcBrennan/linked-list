@@ -15,47 +15,34 @@ var $deleteButton = $('.delete-button');
 
 var $outputWebTitle = $('.output-title');
 var $outputWebUrl = $('.output-url');
-
+var $outputTitle = $('#title-input');
+var $outputURL = $('#url-input');
 
 //Event Listeners
 
 $('#enter').on('click', function() {
+ prependCard();
  var outputTitle = $('#title-input').val();
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
- $(".container-right").append("");
 });
 
-$('#read-button').on('click', function() {
+$('section').on('click', '.cards .bookmarks-button', function() {
 $(this).toggleClass('colorred');
 });
 
-
-
-
-
- var card = $(`<article class="cards">
-        <h2 id="output-title-two">${$outputTitle}</h2>
+function prependCard(event) { 
+  $(".container-right").append(`<article class="cards">
+        <h2 id="output-title-two">${$outputTitle.val()}</h2>
         <hr>
-        <a href="${$outputURL}">${$outputURL}</a>
+        <a href="${$outputURL.val()}">${$outputURL.val()}</a>
         <hr>
         <button class="bookmarks-button" class="colorred" id="read-button">Read</button>
         <button class="bookmarks-button" id="delete-button">Delete</button>
-      </article>`)*/
+      </article>`)
+};
 
-
-
-
-
-
-// // websiteUrl.addEventListener('input', function() {
-
-// });
-
-// submitButton.addEventListener('click', function() {
-//    bookmarkTitle.value = outputWebTitle.innerText
-// });
 
 //Functions
 
