@@ -27,7 +27,7 @@ $('#enter').on('click', function() {
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
- $('#title-input').val() = "";
+ // $('#title-input').val() = "";
 var allArticles = document.querySelectorAll('article')
  console.log(allArticles.length);
 });
@@ -35,6 +35,10 @@ var allArticles = document.querySelectorAll('article')
 $('section').on('click', '.cards .bookmarks-button', function() {
 $(this).toggleClass('colorred');
 });
+
+$('section').on('click', '.cards #delete-button', function() {
+$(this).closest('article').remove();
+})
 
 function prependCard(event) { 
   $(".container-right").append(`<article class="cards">
@@ -47,7 +51,7 @@ function prependCard(event) {
       </article>`)
 };
 
-$('allArticles').l
+
 
 
 //Functions
