@@ -27,13 +27,21 @@ $('#enter').on('click', function() {
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
- $('#title-input').val() = "";
+ // $('#title-input').val() = "";
 var allArticles = document.querySelectorAll('article')
  console.log(allArticles.length);
+ $('.card-counter').text(allArticles.length);
 });
 
 $('section').on('click', '.cards .bookmarks-button', function() {
 $(this).toggleClass('colorred');
+$(this).addClass('read');
+});
+
+$('section').on('click', '.cards #delete-button', function() {
+$(this).closest('article').remove();
+var allArticles = document.querySelectorAll('article')
+$('.card-counter').text(allArticles.length);
 });
 
 function prependCard(event) { 
@@ -47,7 +55,13 @@ function prependCard(event) {
       </article>`)
 };
 
-$('allArticles').l
+function isEmailValid()
+
+// function clearInputField() {
+//   if 
+// }
+
+
 
 
 //Functions
