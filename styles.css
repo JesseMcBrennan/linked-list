@@ -50,7 +50,7 @@ h1  {
   margin-top:
   padding-bottom: 30%;
   margin-bottom: 7%;
-  font-size: 568%;
+  font-size: 7.5em;
   margin-top: 10%;
 }
 
@@ -90,15 +90,15 @@ hr {
   height: 50px;
 }
 
-.main-input::placeholder-shown: { 
-  font-size: 
+.main-input::placeholder: { 
+  size: 2em;
 }
 
 .bookmarks-button {
   color: #455a64;
   background: transparent;
   border: none; 
-  padding-top: 5%;
+  padding-top: 2.5%;
 }
 
 .bookmarks-button:hover {
@@ -110,8 +110,20 @@ hr {
   float: left;
 }
 
+input:focus {
+  outline: none;
+}
+
+button:focus {
+  outline: none;
+}
+
 #delete-button { 
   float: right;
+}
+
+.colorred { 
+  color: red;
 }
 
  #enter {  
@@ -133,6 +145,7 @@ hr {
   background-color: #CFD8DC;
   text-align: center;
   height: 100vh;
+  overflow: scroll;
 }
 
 .cards { 
@@ -141,7 +154,7 @@ hr {
   text-align: left;
   padding: 2%;
   background-color: #FFFFFF;
-  margin: 2%;
+  margin: 3%;
   height: 150px;
 
 }
