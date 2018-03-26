@@ -18,6 +18,7 @@ var $outputWebUrl = $('.output-url');
 var $outputTitle = $('#title-input');
 var $outputURL = $('#url-input');
 
+
 //Event Listeners
 
 $('#enter').on('click', function() {
@@ -27,6 +28,8 @@ $('#enter').on('click', function() {
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
  $('#title-input').val() = "";
+var allArticles = document.querySelectorAll('article')
+ console.log(allArticles.length);
 });
 
 $('section').on('click', '.cards .bookmarks-button', function() {
@@ -44,6 +47,8 @@ function prependCard(event) {
       </article>`)
 };
 
+$('allArticles').l
+
 
 //Functions
 
@@ -51,3 +56,5 @@ function prependCard(event) {
 
 
 //Notes
+
+//use .closest 

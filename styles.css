@@ -114,6 +114,10 @@ input:focus {
   outline: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 #delete-button { 
   float: right;
 }
