@@ -30,6 +30,7 @@ $('#enter').on('click', function() {
  // $('#title-input').val() = "";
 var allArticles = document.querySelectorAll('article')
  console.log(allArticles.length);
+ $('.card-counter').text(allArticles.length);
 });
 
 $('section').on('click', '.cards .bookmarks-button', function() {
@@ -38,7 +39,9 @@ $(this).toggleClass('colorred');
 
 $('section').on('click', '.cards #delete-button', function() {
 $(this).closest('article').remove();
-})
+var allArticles = document.querySelectorAll('article')
+$('.card-counter').text(allArticles.length);
+});
 
 function prependCard(event) { 
   $(".container-right").append(`<article class="cards">
@@ -50,6 +53,7 @@ function prependCard(event) {
         <button class="bookmarks-button" id="delete-button">Delete</button>
       </article>`)
 };
+
 
 
 
