@@ -35,6 +35,7 @@ var allArticles = document.querySelectorAll('article')
 
 $('section').on('click', '.cards .bookmarks-button', function() {
 $(this).toggleClass('colorred');
+$(this).addClass('read');
 });
 
 $('section').on('click', '.cards #delete-button', function() {
