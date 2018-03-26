@@ -55,6 +55,11 @@ function prependCard(event) {
       </article>`)
 };
 
+function isEmailValid()
+
+// function clearInputField() {
+//   if 
+// }
 
 
 
