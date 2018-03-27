@@ -28,12 +28,9 @@ $('#enter').on('click', function() {
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
- cardCounter();
  $('#title-input').val('');
  $('#url-input').val('');
-// var allArticles = document.querySelectorAll('article')
-//  console.log(allArticles.length);
- // $('.card-counter').text(allArticles.length);
+ cardCounter();
 });
 
 $('section').on('click', '.cards .bookmarks-button', function() {
@@ -82,18 +79,9 @@ function isWebsiteValid() {
   }
 }
 
-// function clearInputField() {
-  
-// }
 
 
 
 
-//Functions
 
 
-
-
-//Notes
-
-//use .closest 
