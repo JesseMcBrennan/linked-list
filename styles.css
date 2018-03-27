@@ -1,71 +1,66 @@
 *,
-*: after,
-*: before { 
-box-sizing: border-box;
+*:after,
+*:before {
+  box-sizing: border-box;
 }
 
-
-
-* { 
+* {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
   margin: 0;
 }
 
-html  { 
+html {
+}
 
- }
-
-body  { 
+body {
   width: 100%;
   margin: 0;
 }
 
-main { 
+main {
   display: flex;
   width: 100%;
 }
 
-
-section { 
+section {
   display: inline-block;
   width: 50%;
 }
 
-.container-left { 
+.container-left {
   text-align: center;
-  background-color: #455A64; 
+  background-color: #455A64;
   height: 100vh;
 }
 
-header { 
+header {
   text-align: center;
   margin: auto;
- }
+}
 
-h1  { 
-  color: #ffffff; 
-  color: white;
+h1 {
+  color: #ffffff;
   font-weight: 800;
-  margin-top:
   padding-bottom: 30%;
   margin-bottom: 7%;
   font-size: 7.5em;
   margin-top: 10%;
 }
 
-h2 { 
-  font-weight: 800; color: #455A64;
+h2 {
+  font-weight: 800;
+  color: #455A64;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
-img { 
+img {
   width: 14%;
   margin-left: 15px;
 }
 
-a { 
+a {
   color: #607D8B;
   text-decoration: underline #f2f4f4;
   line-height: 280%;
@@ -74,14 +69,17 @@ a {
 a:hover {
   font-weight: 800;
   text-decoration: underline #ffc107;
-
 }
 
-hr { 
+.read-underline {
+  text-decoration: underline #cfd8dc;
+}
+
+hr {
   color: #CFD8DC;
 }
 
- .main-input { 
+.main-input {
   display: block;
   margin: auto;
   text-align: left;
@@ -90,14 +88,14 @@ hr {
   height: 50px;
 }
 
-.main-input::placeholder: { 
+.main-input::placeholder: {
   size: 2em;
 }
 
 .bookmarks-button {
   color: #455a64;
   background: transparent;
-  border: none; 
+  border: none;
   padding-top: 2.5%;
 }
 
@@ -106,7 +104,7 @@ hr {
   text-decoration: underline #ffc107;
 }
 
-#read-button { 
+#read-button {
   float: left;
 }
 
@@ -118,15 +116,15 @@ button:focus {
   outline: none;
 }
 
-#delete-button { 
+#delete-button {
   float: right;
 }
 
-.colorred { 
-  color: red;
+.read {
+  color: #f05a28;
 }
 
- #enter {  
+#enter {
   margin: auto;
   width: 85%;
   height: 50px;
@@ -135,20 +133,20 @@ button:focus {
   background-color: #FFC107;
   margin-bottom: 10%;
   border: none;
- }
+}
 
- #enter:hover {
+#enter:hover {
   color: #ffd773;
- }
+}
 
-.container-right { 
+.container-right {
   background-color: #CFD8DC;
   text-align: center;
   height: 100vh;
   overflow: scroll;
 }
 
-.cards { 
+.cards {
   border: 2px solid #607d8b;
   margin: auto;
   text-align: left;
@@ -156,6 +154,8 @@ button:focus {
   background-color: #FFFFFF;
   margin: 3%;
   height: 150px;
-
 }
 
+.read-disabled {
+  background-color: #f2f4f4;
+}
