@@ -29,7 +29,7 @@ $('#enter').on('click', function() {
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
  cardCounter();
- // $('#title-input').val() = "";
+ $('#title-input').val() = "";
 // var allArticles = document.querySelectorAll('article')
 //  console.log(allArticles.length);
  // $('.card-counter').text(allArticles.length);
@@ -39,11 +39,19 @@ $('section').on('click', '.cards .bookmarks-button', function() {
 $(this).toggleClass('read');
 });
 
+$('main').on('click', '.container-right .cards', function() {
+$(this).toggleClass('read-disabled');
+});
+
+$('section').on('click', '.cards a', function() {
+$(this).toggleClass('read-underline');
+});
+
 $('section').on('click', '.cards #delete-button', function() {
 $(this).closest('article').remove();
 cardCounter();
-// var allArticles = document.querySelectorAll('article')
-// $('.card-counter').text(allArticles.length);
+
+
 });
 
 function cardCounter() {
