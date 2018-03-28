@@ -23,7 +23,7 @@ var $outputURL = $('#url-input');
 
 $('#enter').on('click', function() {
  prependCard();
- //isWebsiteValid();
+ isWebsiteValid();
  var outputTitle = $('#title-input').val();
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
