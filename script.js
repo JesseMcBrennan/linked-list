@@ -22,8 +22,8 @@ var $outputURL = $('#url-input');
 //Event Listeners
 
 $('#enter').on('click', function() {
- // prependCard();
- isWebsiteValid();
+ prependCard();
+ //isWebsiteValid();
  var outputTitle = $('#title-input').val();
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
@@ -48,8 +48,17 @@ $(this).toggleClass('read-underline');
 $('section').on('click', '.cards #delete-button', function() {
 $(this).closest('article').remove();
 cardCounter();
+});
 
 
+//Functions
+
+$websiteUrl.on('keydown', function() {
+  if($websiteUrl.val()> "" && $bookmarkTitle.val()>"")  { 
+    console.log($websiteUrl.val())
+    console.log($bookmarkTitle.val())
+    $submitButton.prop('disabled', false);
+  }
 });
 
 function cardCounter() {
@@ -75,7 +84,6 @@ function isWebsiteValid() {
     prependCard();
   } else {
     alert('That is not a valid URL');
-    prependCard();
   }
 }
 

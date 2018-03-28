@@ -8,6 +8,7 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
+  font-size: 16px;
 }
 
 html {
@@ -42,22 +43,25 @@ header {
 h1 {
   color: #ffffff;
   font-weight: 800;
-  padding-bottom: 30%;
-  margin-bottom: 7%;
-  font-size: 7.5em;
-  margin-top: 10%;
+  padding-bottom: 3%;
+  margin-bottom: 5%;
+  font-size: 5.8em;
+  margin-top: 25%;
 }
 
 h2 {
   font-weight: 800;
+  font-size: 1.5em;
   color: #455A64;
   padding-top: 2%;
   padding-bottom: 2%;
 }
 
 img {
-  width: 14%;
-  margin-left: 15px;
+  width: 15%;
+  margin-left: 13px;
+  margin-right: 5px;
+
 }
 
 a {
@@ -83,13 +87,20 @@ hr {
   display: block;
   margin: auto;
   text-align: left;
-  margin-bottom: 72px;
-  width: 85%;
+  margin-bottom: 50px;
+  width: 90%;
   height: 50px;
+  font-size: 140%;
+  padding-top: 10px;
+  color: rgb(187,189,191);
+  padding-left: 10px;
+  border-width: 2px solid rgb(187,189,191);
 }
 
-.main-input::placeholder: {
-  size: 2em;
+input::placeholder {
+  font-size: 50%;
+  line-height: 2.5;
+  color: rgb(187,189,191);
 }
 
 .bookmarks-button {
@@ -126,13 +137,26 @@ button:focus {
 
 #enter {
   margin: auto;
-  width: 85%;
+  width: 90%;
   height: 50px;
   font-weight: 800;
+  color: white;
   text-align: center;
   background-color: #FFC107;
-  margin-bottom: 10%;
+  padding-bottom: 0%;
   border: none;
+}
+
+.card-counter { 
+  color: #455A64;
+  background-color: #CFD8DC;
+  width: 20px;
+  height: 20px;
+  border-width: 1px  solid color: #607D8B;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  border-radius: 20%;
 }
 
 #enter:hover {
@@ -147,13 +171,13 @@ button:focus {
 }
 
 .cards {
-  border: 2px solid #607d8b;
+  border: 2px solid #607D8B;
   margin: auto;
   text-align: left;
   padding: 2%;
   background-color: #FFFFFF;
   margin: 3%;
-  height: 150px;
+  height: 171px;
 }
 
 .read-disabled {
