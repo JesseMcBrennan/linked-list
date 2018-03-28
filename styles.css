@@ -157,7 +157,7 @@ button:focus {
 
 .card-counter { 
   color: #455A64;
-  background-color: #CFD8DC;
+  background-color: white;
   width: 20px;
   height: 20px;
   border-width: 1px  solid color: #607D8B;
@@ -166,6 +166,38 @@ button:focus {
   margin-top: 3%;
   border-radius: 20%;
   margin-top: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.read-links { 
+  color: #455A64;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-width: 1px  solid color: #607D8B;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  border-radius: 20%;
+  margin-top: 5px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.unread-links {
+  color: #455A64;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-width: 1px  solid color: #607D8B;
+  margin: auto;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  border-radius: 20%;
+  margin-top: 5px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 #enter:hover {
@@ -192,3 +224,33 @@ button:focus {
 .read-disabled {
   background-color: #f2f4f4;
 }
+
+@media screen and (min-width: 900px;) {
+  .container { 
+  width: 90%; 
+  }
+}
+
+@media screen and (max-width: 550px) { 
+    .container {
+    height: 100%;
+  }
+
+  .main-content {
+    float: none;
+    height: 400px;
+    width: 100%;
+  }
+
+  .secondary-content {
+    float: none;
+    height: 200px;
+    width: 100%;
+  }
+
+  body { 
+    background-color: chartreuse;
+   }
+ }
+
+

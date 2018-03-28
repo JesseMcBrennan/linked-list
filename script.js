@@ -17,20 +17,21 @@ var $outputWebTitle = $('.output-title');
 var $outputWebUrl = $('.output-url');
 var $outputTitle = $('#title-input');
 var $outputURL = $('#url-input');
+var $readLinks = $('.read-links');
+var $unreadLinks =$('.unread-links');
 
 
 //Event Listeners
 
 $('#enter').on('click', function() {
- prependCard();
  isWebsiteValid();
+ //prependCard();
  var outputTitle = $('#title-input').val();
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
  $('.output-url').text(outputURL);
  $('#title-input').val('');
  $('#url-input').val('');
- cardCounter();
 });
 
 $('section').on('click', '.cards .bookmarks-button', function() {
@@ -50,6 +51,11 @@ $(this).closest('article').remove();
 cardCounter();
 });
 
+$('section').on('click', '.cards #read-button', function() {
+  $(this).toggleClass('.read-links');
+  readCounter();
+});
+
 
 //Functions
 
@@ -60,6 +66,16 @@ $websiteUrl.on('keydown', function() {
     $submitButton.prop('disabled', false);
   }
 });
+
+function readCounter() {
+  var readLinks = document.querySelectorAll('.read')
+  $('.read-links').text(readLinks.length);
+}
+
+function unreadCounter() {
+  var unRead = document.querySelectorAll('article')
+  $('.unread-links').text(allArticles.length - readLinks.length);
+}
 
 function cardCounter() {
   var allArticles = document.querySelectorAll('article')
@@ -75,6 +91,7 @@ function prependCard(event) {
         <button class="bookmarks-button" id="read-button">Read</button>
         <button class="bookmarks-button" id="delete-button">Delete</button>
       </article>`)
+  cardCounter();
 };
 
 function isWebsiteValid() {
