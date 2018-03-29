@@ -11,9 +11,6 @@
   font-size: 16px;
 }
 
-html {
-}
-
 body {
   width: 100%;
   margin: 0;
@@ -91,16 +88,16 @@ hr {
   height: 50px;
   font-size: 1.8em;
   padding-top: 10px;
-  padding-bo
   color: rgb(187,189,191);
   padding-left: 10px;
-  border-width: 2px solid rgb(187,189,191);
+  border-width: 3px solid rgb(187,189,191);
 }
 
 input::placeholder {
   font-size: 1em;
   line-height: 2.5;
   color: rgb(187,189,191);
+  line-height: text-center;
 }
 
 .bookmarks-button {
@@ -165,6 +162,7 @@ button:focus {
 
 .button-wrapper { 
   padding-bottom: 3%;
+  font-size: 15px;
  }
 
 .card-counter { 
@@ -179,7 +177,7 @@ button:focus {
   border-radius: 20%;
   margin-top: 5px;
   display: inline-block;
-  margin-right: 30px;
+  margin-right: 30px;  
 }
 
 .read-links { 

@@ -1,18 +1,8 @@
-// Variables
-
-//Input Variables
-
 var $bookmarkTitle = $('#title-input');
 var $websiteUrl = $('#url-input');
-
-//Button Variables
-
 var $submitButton = $('#enter');
 var $readButton = $('#read-button');
 var $deleteButton = $('.delete-button');
-
-//Display Variables
-
 var $outputWebTitle = $('.output-title');
 var $outputWebUrl = $('.output-url');
 var $outputTitle = $('#title-input');
@@ -22,7 +12,6 @@ var $unreadLinks = $('.unread-links');
 var totalCards = 0;
 var totalRead = 0;
 
-//Event Listeners
 
 $('#enter').on('click', function() {
  isWebsiteValid();
@@ -57,8 +46,6 @@ $('section').on('click', '.cards #read-button', function() {
   unreadCounter();
 });
 
-
-//Functions
 
 $websiteUrl.on('keydown', function() {
   if($websiteUrl.val()> "" && $bookmarkTitle.val()>"")  { 
