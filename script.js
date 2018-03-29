@@ -17,12 +17,14 @@ var $outputWebTitle = $('.output-title');
 var $outputWebUrl = $('.output-url');
 var $outputTitle = $('#title-input');
 var $outputURL = $('#url-input');
-
+var $readLinks = $('.read-links');
+var $unreadLinks = $('.unread-links');
+var totalCards = 0
+var totalRead = 0
 
 //Event Listeners
 
 $('#enter').on('click', function() {
- // prependCard();
  isWebsiteValid();
  var outputTitle = $('#title-input').val();
  $('.output-title').text(outputTitle);
@@ -30,7 +32,6 @@ $('#enter').on('click', function() {
  $('.output-url').text(outputURL);
  $('#title-input').val('');
  $('#url-input').val('');
- cardCounter();
 });
 
 $('section').on('click', '.cards .bookmarks-button', function() {
@@ -48,13 +49,38 @@ $(this).toggleClass('read-underline');
 $('section').on('click', '.cards #delete-button', function() {
 $(this).closest('article').remove();
 cardCounter();
-
-
 });
+
+$('section').on('click', '.cards #read-button', function() {
+  $(this).toggleClass('.read-links');
+  readCounter();
+  unreadCounter();
+});
+
+
+//Functions
+
+$websiteUrl.on('keydown', function() {
+  if($websiteUrl.val()> "" && $bookmarkTitle.val()>"")  { 
+    $submitButton.prop('disabled', false);
+  }
+});
+
+function readCounter() {
+  var readLinks = document.querySelectorAll('.read')
+  totalRead = $('.read-links').text(readLinks.length);
+}
+
+function unreadCounter() {
+  var unRead = (totalCards) - (totalRead);
+  console.log(totalCards);
+  console.log(totalRead);
+  $('.unread-links').text(unRead);
+}
 
 function cardCounter() {
   var allArticles = document.querySelectorAll('article')
-  $('.card-counter').text(allArticles.length);
+  totalCards = $('.card-counter').text(allArticles.length);
 }
 
 function prependCard(event) { 
@@ -66,6 +92,7 @@ function prependCard(event) {
         <button class="bookmarks-button" id="read-button">Read</button>
         <button class="bookmarks-button" id="delete-button">Delete</button>
       </article>`)
+  cardCounter();
 };
 
 function isWebsiteValid() {
@@ -75,7 +102,6 @@ function isWebsiteValid() {
     prependCard();
   } else {
     alert('That is not a valid URL');
-    prependCard();
   }
 }
 
