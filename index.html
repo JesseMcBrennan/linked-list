@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <title>Linked List</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="styles.css">
@@ -15,12 +16,13 @@
           <input type="text" name="Website URL" placeholder="Website URL" class="main-input" id="url-input">
           <label for="website URL"></label>
         </form>
-        
-        <p class="card-counter"></p><p class="read-links"></p><p class="unread-links"></p>
-
+        <article class="button-wrapper">
+          <p class="display"> Total Cards <span class="card-counter"></span></p>
+          <p class="display"> Read Cards <span class="read-links"></span></p>
+          <p class="display"> Unread Cards <span class="unread-links"></span></p>
+        </article>
         <button id="enter" class="enter-buttons" disabled>Enter</button>
-        <label for="enter"></label>
-        
+        <label for="enter"></label>  
     </section>
     <section class="container-right">
     </section>

@@ -19,8 +19,8 @@ var $outputTitle = $('#title-input');
 var $outputURL = $('#url-input');
 var $readLinks = $('.read-links');
 var $unreadLinks = $('.unread-links');
-var totalCards = 0
-var totalRead = 0
+var totalCards = 0;
+var totalRead = 0;
 
 //Event Listeners
 
