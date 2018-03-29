@@ -18,14 +18,14 @@ var $outputWebUrl = $('.output-url');
 var $outputTitle = $('#title-input');
 var $outputURL = $('#url-input');
 var $readLinks = $('.read-links');
-var $unreadLinks =$('.unread-links');
-
+var $unreadLinks = $('.unread-links');
+var totalCards = 0
+var totalRead = 0
 
 //Event Listeners
 
 $('#enter').on('click', function() {
  isWebsiteValid();
- //prependCard();
  var outputTitle = $('#title-input').val();
  $('.output-title').text(outputTitle);
  var outputURL = $('#url-input').val();
@@ -54,6 +54,7 @@ cardCounter();
 $('section').on('click', '.cards #read-button', function() {
   $(this).toggleClass('.read-links');
   readCounter();
+  unreadCounter();
 });
 
 
@@ -61,25 +62,25 @@ $('section').on('click', '.cards #read-button', function() {
 
 $websiteUrl.on('keydown', function() {
   if($websiteUrl.val()> "" && $bookmarkTitle.val()>"")  { 
-    console.log($websiteUrl.val())
-    console.log($bookmarkTitle.val())
     $submitButton.prop('disabled', false);
   }
 });
 
 function readCounter() {
   var readLinks = document.querySelectorAll('.read')
-  $('.read-links').text(readLinks.length);
+  totalRead = $('.read-links').text(readLinks.length);
 }
 
 function unreadCounter() {
-  var unRead = document.querySelectorAll('article')
-  $('.unread-links').text(allArticles.length - readLinks.length);
+  var unRead = (totalCards) - (totalRead);
+  console.log(totalCards);
+  console.log(totalRead);
+  $('.unread-links').text(unRead);
 }
 
 function cardCounter() {
   var allArticles = document.querySelectorAll('article')
-  $('.card-counter').text(allArticles.length);
+  totalCards = $('.card-counter').text(allArticles.length);
 }
 
 function prependCard(event) { 
