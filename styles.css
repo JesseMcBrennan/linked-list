@@ -83,11 +83,9 @@ hr {
   display: block;
   margin: auto;
   text-align: left;
-  margin-bottom: 50px;
   width: 90%;
   height: 50px;
   font-size: 1.8em;
-  padding-top: 10px;
   color: rgb(187,189,191);
   padding-left: 10px;
   border-width: 3px solid rgb(187,189,191);
@@ -188,21 +186,6 @@ button:focus {
   border-width: 1px  solid color: #607D8B;
   margin: auto;
 
-  margin-top: 3%;
-  border-radius: 20%;
-  margin-top: 5px;
-  display: inline-block;
-  margin-right: 30px;
-}
-
-.unread-links {
-  color: #455A64;
-  background-color: white;
-  width: 20px;
-  height: 20px;
-  border-width: 1px  solid color: #607D8B;
-  margin: auto;
- 
   margin-top: 3%;
   border-radius: 20%;
   margin-top: 5px;

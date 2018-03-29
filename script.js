@@ -58,13 +58,6 @@ function readCounter() {
   totalRead = $('.read-links').text(readLinks.length);
 }
 
-function unreadCounter() {
-  var unRead = (totalCards) - (totalRead);
-  console.log(totalCards);
-  console.log(totalRead);
-  $('.unread-links').text(unRead);
-}
-
 function cardCounter() {
   var allArticles = document.querySelectorAll('article')
   totalCards = $('.card-counter').text(allArticles.length);
